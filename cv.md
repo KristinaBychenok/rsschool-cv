@@ -27,7 +27,7 @@ __Belarusian National Technical University__ Design engineer bachelor (Faculty o
 
 ## Contacts for communication
 
-__kristinabychenok1997@gmail.com__ e-mail address
+__kristinabychenok1997@gmail.com__ e-mail address<br />
 __+375447175374(Vel)__ phone number
 
 ## Links
