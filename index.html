@@ -62,18 +62,29 @@
 
             <div class="example">
                 <h2>Example of code</h2>
-                <h3></h3><code><pre>
-                    function zipWith(fn,a0,a1) {
-                        let min = Math.min(a0.length, a1.length);
-                        let arr = [];
-                        for (let i = 0; i < min; i++){
-                          let r = fn(a0[i],a1[i]);
-                          arr.push(r);
-                        }
-                        
-                        return arr;
-                      }
-                    </pre></code></h3>
+                <pre>
+                    <code>
+                        function findOutlier(integers){
+                            let oddArr = [];
+                            let evenArr = [];
+                            
+                            integers.forEach ((item) => {
+                              if (item % 2 == 0) {
+                                evenArr.push(item)
+                              } else {
+                                oddArr.push(item)
+                              }
+                            })
+                            
+                            if (oddArr.length = evenArr.length) {
+                              return oddArr[0]
+                            } else {
+                              return evenArr[0]
+                            }
+                            
+                          }
+                    </code>
+                </pre>
             </div>
         </article>
     </main>
