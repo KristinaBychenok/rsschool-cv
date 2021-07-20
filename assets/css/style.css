@@ -1,0 +1,107 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(104, 98, 98);
+    color: white;
+    font-size: 30px;
+}
+
+header > div {
+    margin: auto;
+}
+
+.name {
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    padding: 20px;
+    border: solid rgb(231, 177, 105);
+    margin: 50px;
+}
+
+.profesion {
+    margin-top: -80px;
+    margin-left: 200px;
+    padding: 20px;
+    border: solid black;
+}
+
+.profesion > h2 {
+    margin: auto;
+    text-align: center;
+}
+
+.photo > img {
+    margin: auto;
+    padding: 50px;
+}
+
+article {
+    background-color: rgb(231, 177, 105);
+    margin: 0;
+    padding: 30px;
+}
+
+article > section > h2 {
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.currently {
+    border-bottom: 1px solid black;
+}
+
+.employment {
+    border-bottom: 1px solid black;
+}
+
+.education {
+    border-bottom: 1px solid black;
+}
+
+.skills > div > ul {
+    list-style-type: square;    
+}
+
+li {
+    font-size: 21pt;
+    font-weight: bolder;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(104, 98, 98);
+    margin: 0;
+    padding: 30px;
+}
+
+.contacts {
+    text-align: center;
+}
+
+.links {
+    text-align: center;
+    line-height: 2;
+}
+
+.links>ul>li {
+    list-style-type: none;
+}
+
+a {
+    color: rgb(0, 0, 0);
+}
+
+h3 {
+    font-size: 21pt;
+    font-weight: bolder;
+}
