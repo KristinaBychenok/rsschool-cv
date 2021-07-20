@@ -14,7 +14,7 @@ header {
     font-size: 30px;
 }
 
-header > div {
+header>div {
     margin: auto;
 }
 
@@ -34,12 +34,12 @@ header > div {
     border: solid black;
 }
 
-.profesion > h2 {
+.profesion>h2 {
     margin: auto;
     text-align: center;
 }
 
-.photo > img {
+.photo>img {
     margin: auto;
     padding: 50px;
 }
@@ -50,7 +50,7 @@ article {
     padding: 30px;
 }
 
-article > section > h2 {
+article>section>h2 {
     font-weight: bolder;
     text-transform: uppercase;
 }
@@ -67,8 +67,12 @@ article > section > h2 {
     border-bottom: 1px solid black;
 }
 
-.skills > div > ul {
-    list-style-type: square;    
+mark {
+    background-color: rgb(218, 170, 66);
+}
+
+.skills>div>ul {
+    list-style-type: square;
 }
 
 li {
