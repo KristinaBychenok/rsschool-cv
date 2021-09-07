@@ -126,6 +126,27 @@ li {
     font-weight: bolder;
 }
 
+pre{
+    margin: 0;
+}
+
+.pic-example{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.example-link{
+    border: solid black;
+    margin: 20px;
+    transition: height 0.1s ease-in;
+}
+
+.example-link:hover, .example-link:active {
+    height: 510px;
+    transition: height 0.1s ease-in;
+}
+
 /* Main */
 
 /* Footer */
