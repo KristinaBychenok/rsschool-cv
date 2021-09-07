@@ -1,69 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
     <title>CV-Kristina Bychenok</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div>
+      <div class="container">
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="nav-list-item">
+              <a href="#currently" class="header__nav-link">Currently</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#employment" class="header__nav-link">Employment</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#education" class="header__nav-link">Education</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#skills" class="header__nav-link">Skills</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#example" class="header__nav-link">Example</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#contacts" class="header__nav-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-title">
+          <div class="photo">
+            <img
+              src="assets/images/photo1.jpg"
+              alt="my photo"
+              width="500"
+              height="500"
+            />
+          </div>
+          <div class="header-name">
             <div class="name">
-                <h1>Kristina Bychenok</h1>
+              <h1>Kristina Bychenok</h1>
             </div>
 
             <div class="profesion">
-                <h2>Design engineer</h2>
+              <h2>JavaScript developer</h2>
             </div>
+          </div>
         </div>
-
-        <div class="photo">
-            <img src="assets/images/photo1.jpg" alt="my photo" width="500">
-        </div>
+      </div>
     </header>
 
     <main>
+      <div class="container">
         <article>
+          <div class="currently underline" id="currently">
+            <h2>Currently</h2>
+            <h3>
+              I’m a beginner JavaScript developer. Also I'm a design engineer in
+              the past. Here I developed construction drawings.
+            </h3>
+          </div>
 
-            <div class="currently">
-                <h2>Currently</h2>
-                <h3>I’m a design engineer at TSProekt, based at Minsk, Belarus. Here I develop construction drawings.
-                </h3>
-            </div>
+          <div class="employment underline" id="employment">
+            <h2>Employment</h2>
+            <h3>
+              Since 2018 - TSProekt Design engineer (construction drawings
+              developer)
+            </h3>
+          </div>
 
-            <div class="employment">
-                <h2>Employment</h2>
-                <h3>Since 2018 - TSProekt Design engineer (construction drawings developer)</h3>
-            </div>
+          <div class="education underline" id="education">
+            <h2>Education</h2>
+            <h3>
+              2014-2018 - Belarusian National Technical University Design
+              engineer bachelor (Faculty of Civil Engineering)
+            </h3>
+            <h3>Estimated English level - <mark>A2</mark></h3>
+          </div>
 
-            <div class="education">
-                <h2>Education</h2>
-                <h3>2014-2018 - Belarusian National Technical University Design engineer bachelor (Faculty of Civil Engineering)
-                </h3>
-                <h3>Estimated English level - <mark>A2</mark></h3>
-            </div>
+          <div class="skills underline" id="skills">
+            <h2>Technical skills</h2>
+            <ul type="square">
+              <li>AutoCAD</li>
+              <li>Autodesk Revit</li>
+              <li>Autodesk Robot Structural Analysis Professional</li>
+              <li>Javascript</li>
+              <li>HTML and CSS</li>
+              <li>Git</li>
+            </ul>
+          </div>
 
-            <div class="skills">
-                <h2>Technical skills</h2>
-                <ul>
-                    <li>AutoCAD</li>
-                    <li>Autodesk Revit</li>
-                    <li>Autodesk Robot Structural Analysis Professional</li>
-                    <li>Javascript</li>
-                    <li>HTML and CSS</li>
-                    <li>Git</li>
-                </ul>
-            </div>
-
-            <div class="example">
-                <h2>Example of code</h2>
-                <pre>
+          <div class="example" id="example">
+            <h2>Example of code</h2>
+            <pre>
                     <code>
                         function findOutlier(integers){
                             let oddArr = [];
@@ -86,23 +133,34 @@
                           }
                     </code>
                 </pre>
-            </div>
+          </div>
         </article>
+      </div>
     </main>
     <footer>
-        <div class="contacts">
-            <h2>Contacts for communication</h2>
-        </div>
-        <address class="links">
-            <ul>
-                <li>kristinabychenokpr@gmail.com - e-mail address</li>
-                <li>+375447175374(Vel) - phone number</li>
-                <li><a href="https://github.com/KristinaBychenok">GitHub - KristinaBychenok</a></li>
-                <li><a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="school link" width="100"></a></li>
-                <li>2021</li>
-            </ul>
-        </address>
+      <div class="contacts" id="contacts">
+        <h2>Contacts for communication</h2>
+      </div>
+      <address class="links">
+        <ul>
+          <li>kristinabychenokpr@gmail.com - e-mail address</li>
+          <li>+375447175374(Vel) - phone number</li>
+          <li>
+            <a href="https://github.com/KristinaBychenok"
+              >GitHub - KristinaBychenok</a
+            >
+          </li>
+          <li>
+            <a href="https://rs.school/js/"
+              ><img
+                src="https://rs.school/images/rs_school_js.svg"
+                alt="school link"
+                width="100"
+            /></a>
+          </li>
+          <li>2021</li>
+        </ul>
+      </address>
     </footer>
-</body>
-
+  </body>
 </html>

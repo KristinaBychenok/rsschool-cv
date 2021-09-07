@@ -1,21 +1,76 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 23px;
-    width: 80%;
-    margin: auto;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-header {
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: calc(100% - 40px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/* Header */
+
+header{
+    background-color: rgb(104, 98, 98);
+}
+
+.header-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.header-nav-list{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    background-color: rgb(104, 98, 98);
-    color: white;
-    font-size: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
 }
 
-header>div {
-    margin: auto;
+.header-nav-list{
+    list-style-type: none;
+}
+
+.header__nav-link {
+    font: 200 22px/50px 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.1s ease-in;
+}
+
+.header__nav-link:hover,
+.header__nav-link:active {
+    color: #9D8665;
+    transition: color 0.1s ease-in;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 30px;
+    justify-content: center;
 }
 
 .name {
@@ -28,7 +83,7 @@ header>div {
 }
 
 .profesion {
-    margin-top: -80px;
+    margin-top: -70px;
     margin-left: 200px;
     padding: 20px;
     border: solid black;
@@ -39,31 +94,25 @@ header>div {
     text-align: center;
 }
 
-.photo>img {
-    margin: auto;
-    padding: 50px;
-}
-
-article {
-    background-color: rgb(231, 177, 105);
+.photo {
     margin: 0;
-    padding: 30px;
+    margin: 50px 0px 50px 0px;
 }
 
-article>section>h2 {
+/* Header */
+
+/* Main */
+
+main {
+    background-color: rgb(231, 177, 105);
+}
+
+article>div>h2 {
     font-weight: bolder;
     text-transform: uppercase;
 }
 
-.currently {
-    border-bottom: 1px solid black;
-}
-
-.employment {
-    border-bottom: 1px solid black;
-}
-
-.education {
+.underline{
     border-bottom: 1px solid black;
 }
 
@@ -71,16 +120,18 @@ mark {
     background-color: rgb(218, 170, 66);
 }
 
-.skills>div>ul {
-    list-style-type: square;
-}
 
 li {
     font-size: 21pt;
     font-weight: bolder;
 }
 
+/* Main */
+
+/* Footer */
+
 footer {
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: rgb(104, 98, 98);
