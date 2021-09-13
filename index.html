@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -24,28 +25,37 @@
   <body>
     <header>
       <div class="container">
-        <nav class="header-nav">
-          <ul class="header-nav-list">
-            <li class="nav-list-item">
-              <a href="#currently" class="header__nav-link">Currently</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="#employment" class="header__nav-link">Employment</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="#education" class="header__nav-link">Education</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="#skills" class="header__nav-link">Skills</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="#example" class="header__nav-link">Example</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="#contacts" class="header__nav-link">Contacts</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="burger-menu">
+          <!-- меню бургер -->
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-btn" for="menu-toggle">
+            <span></span>
+          </label>
+          <!-- меню бургер -->
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li class="nav-list-item">
+                <a href="#currently" class="header__nav-link">Currently</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#employment" class="header__nav-link">Employment</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#education" class="header__nav-link">Education</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#skills" class="header__nav-link">Skills</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#example" class="header__nav-link">Example</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#contacts" class="header__nav-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
         <div class="header-title">
           <div class="photo">
             <img
@@ -98,7 +108,7 @@
 
           <div class="skills underline" id="skills">
             <h2>Technical skills</h2>
-            <ul type="square">
+            <ul class="skills-list">
               <li>AutoCAD</li>
               <li>Autodesk Revit</li>
               <li>Autodesk Robot Structural Analysis Professional</li>
@@ -110,81 +120,82 @@
 
           <div class="example" id="example">
             <h2>Code and project examples</h2>
-            <pre>
-                    <code>
-                        function findOutlier(integers){
-                            let oddArr = [];
-                            let evenArr = [];
-                            
-                            integers.forEach ((item) => {
-                              if (item % 2 == 0) {
-                                evenArr.push(item)
-                              } else {
-                                oddArr.push(item)
-                              }
-                            })
-                            
-                            if (oddArr.length = evenArr.length) {
-                              return oddArr[0]
-                            } else {
-                              return evenArr[0]
-                            }
-                            
-                          }
-                    </code>
-                </pre>
-            <div class="pic-example">
-              <a
-                href="https://rolling-scopes-school.github.io/kristinabychenok-JSFEPRESCHOOL/drum-kit/"
-                target="_blank"
-              >
-                <img
-                  src="./assets/images/drum-kit.PNG"
-                  class="example-link"
-                  alt="drum-kit"
-                  height="500"
-                />
-              </a>
-              <a
-                href="https://rolling-scopes-school.github.io/kristinabychenok-JSFEPRESCHOOL/museum/"
-                target="_blank"
-              >
-                <img
-                  src="./assets/images/museum.PNG"
-                  class="example-link"
-                  alt="museum"
-                  height="500"
-                />
-              </a>
+            <div class="code_example">
+              <pre>
+                <code>
+                  function findOutlier(integers){
+                    let oddArr = [];
+                    let evenArr = [];
+                              
+                    integers.forEach ((item) => {
+                      if (item % 2 == 0) {
+                        evenArr.push(item)
+                      } else {
+                        oddArr.push(item)
+                      }
+                    })
+                              
+                    if (oddArr.length = evenArr.length) {
+                      return oddArr[0]
+                    } else {
+                      return evenArr[0]
+                    }
+                  }
+                </code>
+              </pre>
+              <div class="pic-example">
+                <a
+                  href="https://rolling-scopes-school.github.io/kristinabychenok-JSFEPRESCHOOL/drum-kit/"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/images/drum-kit.PNG"
+                    class="example-link"
+                    alt="drum-kit"
+                  />
+                </a>
+                <a
+                  href="https://rolling-scopes-school.github.io/kristinabychenok-JSFEPRESCHOOL/museum/"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/images/museum.PNG"
+                    class="example-link"
+                    alt="museum"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </article>
       </div>
     </main>
     <footer>
-      <div class="contacts" id="contacts">
-        <h2>Contacts for communication</h2>
+      <div class="container">
+        <div class="contacts" id="contacts">
+          <h2>Contacts for communication</h2>
+        </div>
+        <address class="links">
+          <ul>
+            <li>kristinabychenokpr@gmail.com - e-mail address</li>
+            <li>+375447175374(Vel) - phone number</li>
+            <li>
+              <a href="https://github.com/KristinaBychenok"
+                >GitHub - KristinaBychenok</a
+              >
+            </li>
+            <li>
+              <a href="https://rs.school/js/"
+                ><img
+                  src="https://rs.school/images/rs_school_js.svg"
+                  alt="school link"
+                  width="100"
+              /></a>
+            </li>
+            <li>2021</li>
+          </ul>
+        </address>
       </div>
-      <address class="links">
-        <ul>
-          <li>kristinabychenokpr@gmail.com - e-mail address</li>
-          <li>+375447175374(Vel) - phone number</li>
-          <li>
-            <a href="https://github.com/KristinaBychenok"
-              >GitHub - KristinaBychenok</a
-            >
-          </li>
-          <li>
-            <a href="https://rs.school/js/"
-              ><img
-                src="https://rs.school/images/rs_school_js.svg"
-                alt="school link"
-                width="100"
-            /></a>
-          </li>
-          <li>2021</li>
-        </ul>
-      </address>
     </footer>
   </body>
 </html>
