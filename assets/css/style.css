@@ -113,6 +113,7 @@ header{
 
 main {
     background-color: rgb(231, 177, 105);
+    font-weight: normal;
 }
 
 article{
@@ -122,6 +123,11 @@ article{
 article>div>h2 {
     font-weight: bolder;
     text-transform: uppercase;
+}
+
+article>div>h3 {
+    font-size: 21pt;
+    font-weight: normal;
 }
 
 .underline{
@@ -139,7 +145,7 @@ mark {
 
 li {
     font-size: 21pt;
-    font-weight: bolder;
+    font-weight: normal;
 }
 
 .code_example{
@@ -152,7 +158,10 @@ li {
 pre{
     width: 100%;
     margin: 0;
-    
+}
+
+code{
+    padding-left: 0;
 }
 
 .pic-example{
@@ -197,16 +206,14 @@ footer {
 
 .links>ul>li {
     list-style-type: none;
+    font-size: 21pt;
+    font-weight: normal;
+    font-style: normal;
 }
 
 a {
     color: rgb(0, 0, 0);
     text-decoration: none;
-}
-
-h3 {
-    font-size: 21pt;
-    font-weight: bolder;
 }
 
 /* media */
@@ -264,18 +271,11 @@ h3 {
         display:none;
     }
 
-    #menu-toggle:hover ~ .header-nav{
+    #menu-toggle:checked ~ .header-nav{
         display: block;
-        position: fixed;
-        visibility: inherit;
         position: absolute;
         left: 0;
     }
-
-    /* .header-nav:hover{
-        display: block;
-    } */
-
     
     .header-nav-list{
         width: 100%;
@@ -398,6 +398,10 @@ h3 {
         font-size: 20px;
     }
 
+    code{
+        font-size: 15px;
+    }
+
     .example-link{
         height: 350px;
     }
@@ -452,6 +456,10 @@ h3 {
 
     /* Main */
 
+    code{
+        font-size: 13px;
+    }
+
     .example-link{
         height: 250px;
     }
@@ -474,6 +482,10 @@ h3 {
 @media (max-width: 400px){
 
     /* Main */
+
+    code{
+        font-size: 10px;
+    }
 
     .example-link{
         height: 200px;

@@ -123,24 +123,24 @@
             <div class="code_example">
               <pre>
                 <code>
-                  function findOutlier(integers){
-                    let oddArr = [];
-                    let evenArr = [];
-                              
-                    integers.forEach ((item) => {
-                      if (item % 2 == 0) {
-                        evenArr.push(item)
-                      } else {
-                        oddArr.push(item)
-                      }
-                    })
-                              
-                    if (oddArr.length = evenArr.length) {
-                      return oddArr[0]
-                    } else {
-                      return evenArr[0]
-                    }
-                  }
+  function findOutlier(integers){
+    let oddArr = [];
+    let evenArr = [];
+                                
+    integers.forEach ((item) => {
+      if (item % 2 == 0) {
+        evenArr.push(item)
+      } else {
+        oddArr.push(item)
+      }
+    })
+                                
+    if (oddArr.length = evenArr.length) {
+      return oddArr[0]
+    } else {
+      return evenArr[0]
+    }
+  }
                 </code>
               </pre>
               <div class="pic-example">
