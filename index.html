@@ -1,108 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
     <title>CV-Kristina Bychenok</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div>
+      <div class="container">
+        <div class="burger-menu">
+          <!-- меню бургер -->
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-btn" for="menu-toggle">
+            <span></span>
+          </label>
+          <!-- меню бургер -->
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li class="nav-list-item">
+                <a href="#currently" class="header__nav-link">Currently</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#employment" class="header__nav-link">Employment</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#education" class="header__nav-link">Education</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#skills" class="header__nav-link">Skills</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#example" class="header__nav-link">Example</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#contacts" class="header__nav-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header-title">
+          <div class="photo">
+            <img
+              src="assets/images/photo1.jpg"
+              alt="my photo"
+              width="500"
+              height="500"
+            />
+          </div>
+          <div class="header-name">
             <div class="name">
-                <h1>Kristina Bychenok</h1>
+              <h1>Kristina Bychenok</h1>
             </div>
 
             <div class="profesion">
-                <h2>Design engineer</h2>
+              <h2>JavaScript developer</h2>
             </div>
+          </div>
         </div>
-
-        <div class="photo">
-            <img src="assets/images/photo1.jpg" alt="my photo" width="500">
-        </div>
+      </div>
     </header>
 
     <main>
+      <div class="container">
         <article>
+          <div class="currently underline" id="currently">
+            <h2>Currently</h2>
+            <h3>
+              I’m a beginner JavaScript developer. Also I was a design engineer
+              in the past. Here I developed construction drawings.
+            </h3>
+          </div>
 
-            <div class="currently">
-                <h2>Currently</h2>
-                <h3>I’m a design engineer at TSProekt, based at Minsk, Belarus. Here I develop construction drawings.
-                </h3>
-            </div>
+          <div class="employment underline" id="employment">
+            <h2>Employment</h2>
+            <h3>
+              2018-2021 - TSProekt Design engineer (construction drawings
+              developer)
+            </h3>
+          </div>
 
-            <div class="employment">
-                <h2>Employment</h2>
-                <h3>Since 2018 - TSProekt Design engineer (construction drawings developer)</h3>
-            </div>
+          <div class="education underline" id="education">
+            <h2>Education</h2>
+            <h3>
+              2014-2018 - Belarusian National Technical University Design
+              engineer bachelor (Faculty of Civil Engineering)
+            </h3>
+            <h3>
+              2021 July-August - The rolling scopes school JS/FE PRE-SCHOOL
+              (JAVASCRIPT)
+            </h3>
+            <h3>Estimated English level - <mark>A2 (beginning B1)</mark></h3>
+          </div>
 
-            <div class="education">
-                <h2>Education</h2>
-                <h3>2014-2018 - Belarusian National Technical University Design engineer bachelor (Faculty of Civil Engineering)
-                </h3>
-                <h3>Estimated English level - <mark>A2</mark></h3>
-            </div>
+          <div class="skills underline" id="skills">
+            <h2>Technical skills</h2>
+            <ul class="skills-list">
+              <li>AutoCAD</li>
+              <li>Autodesk Revit</li>
+              <li>Autodesk Robot Structural Analysis Professional</li>
+              <li>Javascript</li>
+              <li>HTML and CSS</li>
+              <li>Git</li>
+            </ul>
+          </div>
 
-            <div class="skills">
-                <h2>Technical skills</h2>
-                <ul>
-                    <li>AutoCAD</li>
-                    <li>Autodesk Revit</li>
-                    <li>Autodesk Robot Structural Analysis Professional</li>
-                    <li>Javascript</li>
-                    <li>HTML and CSS</li>
-                    <li>Git</li>
-                </ul>
+          <div class="example" id="example">
+            <h2>Code and project examples</h2>
+            <div class="code_example">
+              <p>Kata from CodeWars - Array Deep Count</p>
+              <pre>
+                <code>
+  function deepCount(a){
+    let x = 0;
+    let count = function(arr){
+      arr.forEach(function(item){
+        x += 1;
+        if (Array.isArray(item)){
+          count(item)
+        }
+      })
+    }
+    count(a)
+    return x
+  }
+                </code>
+              </pre>
+              <div>
+                <p class="underline">Your sounds of nature / Museum</p>
+                <p>
+                  Key skills: exporting styles and graphics from Figma,
+                  connecting fonts, layout of navigation interface elements,
+                  layout of card interface elements, layout and styling of
+                  interactive interface elements (buttons, links, radio
+                  buttons), working with the DOM, working with video and audio
+                </p>
+              </div>
+              <div class="pic-example">
+                <a
+                  href="https://rolling-scopes-school.github.io/kristinabychenok-JSFEPRESCHOOL/drum-kit/"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/images/drum-kit.PNG"
+                    class="example-link"
+                    alt="drum-kit"
+                  />
+                </a>
+                <a
+                  href="https://rolling-scopes-school.github.io/kristinabychenok-JSFEPRESCHOOL/museum/"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/images/museum.PNG"
+                    class="example-link"
+                    alt="museum"
+                  />
+                </a>
+              </div>
             </div>
-
-            <div class="example">
-                <h2>Example of code</h2>
-                <pre>
-                    <code>
-                        function findOutlier(integers){
-                            let oddArr = [];
-                            let evenArr = [];
-                            
-                            integers.forEach ((item) => {
-                              if (item % 2 == 0) {
-                                evenArr.push(item)
-                              } else {
-                                oddArr.push(item)
-                              }
-                            })
-                            
-                            if (oddArr.length = evenArr.length) {
-                              return oddArr[0]
-                            } else {
-                              return evenArr[0]
-                            }
-                            
-                          }
-                    </code>
-                </pre>
-            </div>
+          </div>
         </article>
+      </div>
     </main>
     <footer>
-        <div class="contacts">
-            <h2>Contacts for communication</h2>
+      <div class="container">
+        <div class="contacts" id="contacts">
+          <h2>Contacts for communication</h2>
         </div>
         <address class="links">
-            <ul>
-                <li>kristinabychenokpr@gmail.com - e-mail address</li>
-                <li>+375447175374(Vel) - phone number</li>
-                <li><a href="https://github.com/KristinaBychenok">GitHub - KristinaBychenok</a></li>
-                <li><a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="school link" width="100"></a></li>
-                <li>2021</li>
-            </ul>
+          <ul>
+            <li>kristinabychenokpr@gmail.com - e-mail address</li>
+            <li>+375447175374(Vel) - phone number</li>
+            <li>
+              <a href="https://github.com/KristinaBychenok"
+                >GitHub - KristinaBychenok</a
+              >
+            </li>
+            <li>
+              <a href="https://rs.school/js/"
+                ><img
+                  src="https://rs.school/images/rs_school_js.svg"
+                  alt="school link"
+                  width="100"
+              /></a>
+            </li>
+            <li>2021</li>
+          </ul>
         </address>
+      </div>
     </footer>
-</body>
 
+    <script>
+      console.log(`вёрстка валидная +10
+вёрстка семантическая +20
+В коде страницы присутствуют семантические теги HTML5 (header, main, footer, adress, article, code, mark, nav, h1-h3)
+для оформления СV используются css-стили +10
+контент размещается в блоке, который горизонтально центрируется на странице. Фоновый цвет тянется во всю ширину страницы +10
+вёрстка адаптивная: ни на одном из разрешений экрана до 320px включительно не появляется горизонтальная полоса прокрутки, при этом всё содержание страницы сохраняется +10
+есть адаптивное бургер-меню. Ссылки в пунктах меню ведут на основные разделы CV. При кликах по пунктам меню реализована плавная прокрутка по якорям. При уменьшении ширины экрана меню становится адаптивным. Внешний вид адаптивного меню можно скопировать с макета музея +10
+на странице СV присутствует изображение - аватарка автора CV, пропорции изображения не искажены, у изображения есть атрибут alt +10
+контакты для связи и перечень навыков оформлены в виде списка ul > li +10
+CV содержит контакты для связи, краткую информацию о себе, перечень навыков, информацию об образовании и уровне английского +10
+CV содержит пример кода с подсветкой кода +10
+CV содержит изображения-ссылки на выполненные проекты. При клике по изображению страница проекта открывается в новой вкладке +10
+CV выполнено на английском языке +10
+выполнены требования к Pull Request: есть ссылка на задание, скриншот страницы СV, ссылка на деплой страницы CV на GitHub Pages, выполнена самооценка +10
+дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию +10`);
+    </script>
+  </body>
 </html>
